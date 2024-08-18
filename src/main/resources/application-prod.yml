@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+
+spring:
+  # 머스테치 템플릿
+  mustache:
+    servlet:
+      expose-session-attributes: true
+      expose-request-attributes: true
+  # 데이터 베이스
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    driver-class-name: org.h2.Driver
+    username: matthew
+    password:
+  # console url 설정입니다. 웹으로 접근할 수 있게요
+  h2:
+    console:
+      enabled: true
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: none # 조심하기!
