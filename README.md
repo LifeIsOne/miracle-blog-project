@@ -8,3 +8,19 @@
 - JPA
 - H2
 - MySQL
+
+## 2. 모델링
+```SQL
+User
+id
+username
+password
+createdAt
+
+Post
+id
+title
+content
+userId
+createdAt
+``
