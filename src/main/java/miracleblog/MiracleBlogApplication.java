@@ -1,13 +1,13 @@
-package org.example.springblogproject;
+package miracleblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBlogProjectApplication {
+public class MiracleBlogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBlogProjectApplication.class, args);
+		SpringApplication.run(MiracleBlogApplication.class, args);
 	}
 
 }
