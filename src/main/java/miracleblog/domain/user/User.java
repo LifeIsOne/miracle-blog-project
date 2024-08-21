@@ -14,6 +14,7 @@ public class User {
     private Integer id;             // PK
 
     private String username;        // 사용자 이름
+    private String email;           // 이메일, 로그인ID
     private String password;        // 비밀번호
 
     @CreationTimestamp
