@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+.login-section{
+    margin: 50px auto;
+    width: 400px;
+}
+
+.login-form-section{
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Relative positioning context for the pseudo-element */
+    /* box-shadow: 0 0 5px 1px #ddd; */
+    border-radius: 10px;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.login-form-section::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(to right bottom, #9DCEFF, #EEA4CE);
+    z-index: -1;
+    border-radius: 8px;
+    filter: blur(15px);
+}
+
+.login-title {
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 24px 16px 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    left: 10px;
+    font-size: 18px;
+    color: #999;
+    pointer-events: none;
+    transition:  .1s ease;
+}
+
+/* 입력시 label 좌측상단 이동 */
+.input-container input:focus+label,
+.input-container input:not(:placeholder-shown)+label {
+    top: 15px;
+    left: 10px;
+    font-size: 10px;
+    color: #333;
+}
+#login-btn-position {
+    position: relative;
+    height: 50px;
+}
+
+.login-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-5px);
+    transform: scale(103%, 110%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
