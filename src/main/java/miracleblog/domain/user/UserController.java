@@ -26,6 +26,6 @@ public class UserController {
     // TODO : 회원가입 페이지 만들기
     @GetMapping("/signup")
     public String getSignupPage() {
-        return "user/sign-page";
+        return "user/signup-page";
     }
 }
