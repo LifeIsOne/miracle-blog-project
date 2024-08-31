@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miracle Blog</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<div class="container">
+
+    <!-- 헤더 시작 -->
+    {{>/_components/header}}
+    <!-- 헤더 종료 -->
+
+    <!--  메인 시작-->
+    <main>
+        <div class="container">
+            <div class="main-div">
+                <div class="title">Error Code : 4xx</div>
+                <div class="sub-title">MSG : 잘못된 xx입니다.</div>
+
+                <div id="back-btn">
+                    <a href="/login">페이지 돌아가기</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 메인 종료 -->
+
+    <!--  푸터 시작  -->
+    {{>/_components/footer}}
+    <!--  푸터 종료 -->
+</div>
+</body>
+
+</html>

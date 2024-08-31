@@ -29,16 +29,6 @@
     filter: blur(15px);
 }
 
-.login-title {
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    color: #000;
-}
-
 .input-container {
     position: relative;
     margin-bottom: 20px;

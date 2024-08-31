@@ -6,7 +6,7 @@
     font-weight: 700;
     font-style: normal;
 }
-
+/* 공통 설정 */
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +25,26 @@ img {
 
 li{
     list-style-type: none;
+}
+/* 스타일 컴포넌트 */
+.title {
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+}
+
+.sub-title {
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
 }
 
 .container {
@@ -109,6 +129,8 @@ main {
     border-radius: 8px;
 }
 
+
+
 /* 사이드 바 */
 .side_menu{
     width: 200px;
@@ -140,4 +162,9 @@ footer{
 
 footer span{
     color: #ccc;
+}
+
+/* err-page */
+#back-btn {
+    text-align: center;
 }

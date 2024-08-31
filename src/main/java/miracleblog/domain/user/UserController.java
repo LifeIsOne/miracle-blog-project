@@ -41,4 +41,9 @@ public class UserController {
     public String getSignupPage() {
         return "user/signup-page";
     }
+
+    @GetMapping("/err")
+    public String errPage() {
+        return "err/err";
+    }
 }
