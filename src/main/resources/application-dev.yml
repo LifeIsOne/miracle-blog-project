@@ -23,9 +23,15 @@ spring:
       enabled: true
   # JPA
   jpa:
+    # 중요! 데이터 베이스 스키마, 테이블 생성된 후 data.sql 실행
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+  sql:
+    init:
+      data-locations:
+        - classpath:db/data.sql

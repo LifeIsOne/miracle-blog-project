@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miracle Blog</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<div class="container">
+
+    <!-- 헤더시작 -->
+    {{>/_components/header}}
+    <!-- 헤더 종료 -->
+
+    <!-- 블로그 배경 -->
+    <div class="main_bg">
+        <img src="/images/02.jpg" alt="배경이미지">
+    </div>
+
+    <main>
+        <!-- 게시판 -->
+        <div class="section">
+            <div class="board-section">
+                <div class="col-md-3 my-3">
+                    <div class="card card_item">
+                        <a href="#" class="my_atag_none">
+                            <img src="/images/02.jpg" class="card-img-top" style="width: 250px; height: 170px">
+                            <div class="card-body content-wrapper">
+                                <h5 class="card-title"
+                                    style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                    <b>title</b>
+                                </h5>
+                                <p class="card-text my_main_item_summary my_mb_sm_1 my_text_two_line">
+                                    content
+                                </p>
+                                <p class="card-text my_main_item_date my_mb_sm_1"
+                                   style="color: #888888; margin-top: 10px">
+                                    createdAt
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/" class="my_atag_none">
+                            <div class="card-footer card_footer_hover">
+                                <span>by </span>
+                                <b>양승호</b>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 게시판 종료 -->
+        <!-- 사이드 메뉴 -->
+        {{>/_components/side-menu}}
+        <!-- 사이드 메뉴 종료 -->
+    </main>
+    <!-- 섹션 종료 -->
+
+    <!--  푸터  -->
+    {{>/_components/footer}}
+    <!--  푸터 종료 -->
+</div>
+</body>
+
+</html>

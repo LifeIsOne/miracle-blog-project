@@ -1,4 +1,4 @@
-package miracleblog.domain.user;
+package miracleblog.domain.visits;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -7,16 +7,15 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "user_tb")
-public class User {
+@Table(name = "visits_tb")
+public class Visits {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;             // PK
+    private Integer id;
 
-    private String username;        // 사용자 이름
-    private String email;           // 이메일, ( 로그인ID )
-    private String password;        // 비밀번호
+    private Long today;
+    private Long total;
 
     @CreationTimestamp
     private Timestamp createdAt;    // 생성시각

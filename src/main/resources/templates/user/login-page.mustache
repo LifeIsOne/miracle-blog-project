@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 헤더시작 -->
+        {{>/_components/header}}
+        <!-- 헤더 종료 -->
+
+        <!-- 블로그 배경 -->
+        <!-- <div class="main_bg">
+            <img src="../../static/images/02.jpg" alt="배경이미지">
+        </div> -->
+
+        <!-- 메인 시작-->
+        <main>
+            <div class="section">
+                <!-- 로그인 섹션-->
+                <div class="login-section">
+                    <div class="login-form-section">
+                        <div class="title">로그인</div>
+                        <form action="/login" method="post" enctype="multipart/form-data" id="login-form">
+                            <div class="input-group">
+                                <div class="input-container">
+                                    <input type="email" id="email" name="email" value="miracle@blog.com"
+                                        placeholder=" " required>
+                                    <label for="email">이메일을 입력해주세요</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="password" name="password" value="1234" placeholder=" "
+                                        required>
+                                    <label for="password">비밀번호를 입력해주세요</label>
+                                </div>
+                            </div>
+                            <div id="login-btn-position">
+                                <button class="login-btn" type="submit" class="submit-button">Log in</button>
+                            </div>
+                        </form>
+                        <a href="/signup">회원가입</a>
+                    </div>
+                </div>
+                <!-- 로그인 섹션 종료 -->
+            </div>
+            <!-- 사이드 메뉴 -->
+            {{>/_components/side-menu}}
+            <!-- 사이드 메뉴 종료 -->
+        </main>
+        <!-- 메인 종료 -->
+
+        <!--  푸터  -->
+        {{>/_components/footer}}
+        <!--  푸터 종료 -->
+    </div>
+</body>
+
+</html>
