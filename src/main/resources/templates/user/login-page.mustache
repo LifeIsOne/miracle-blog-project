@@ -13,29 +13,7 @@
     <div class="container">
 
         <!-- 헤더시작 -->
-        <header>
-            <div class="logo">
-                <h3>뱛벓미라클 블로그뱛벓</h3>
-            </div>
-            <nav>
-                <div id="menu_bar">
-                    <ul class="">
-                        <a href="">
-                            <li>로그인 기능 넣기</li>
-                        </a>
-                        <a href="">
-                            <li>Life Log</li>
-                        </a>
-                        <a href="">
-                            <li>Hand Book</li>
-                        </a>
-                        <a href="">
-                            <li>CookBook</li>
-                        </a>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        {{>/_components/header}}
         <!-- 헤더 종료 -->
 
         <!-- 블로그 배경 -->
@@ -73,52 +51,14 @@
                 <!-- 로그인 섹션 종료 -->
             </div>
             <!-- 사이드 메뉴 -->
-            <div>
-                <div class="side_menu">
-                    <div class="profile">
-                        <!-- <img src="../static/images/profile.jpg" alt=""> -->
-                        <!-- <p>양승호님! 안녕하세요!</p> -->
-                        <p>로그인 해주세요!</p>
-                        <p>이 블로그는 다음의 기술로 만들어졌습니다!</p>
-                        <p>· (Html/Css) Mustache</p>
-                        <p>· Devtools</p>
-                        <p>· Spring</p>
-                        <p>· Lombok</p>
-                        <p>· JPA</p>
-                        <p>· H2</p>
-                        <p>· MySQL</p>
-                    </div>
-                    <ul>
-                        <a href="">
-                            <li>자유 게시판</li>
-                        </a>
-                        <a href="">
-                            <li>전국 날씨 ( 공공 API )</li>
-                        </a>
-                        <a href="">
-                            <li>Bank App</li>
-                        </a>
-                        <a href="">
-                            <li>Miracle Blog</li>
-                        </a>
-                        <a href="">
-                            <li>더보기</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
+            {{>/_components/side-menu}}
             <!-- 사이드 메뉴 종료 -->
         </main>
         <!-- 메인 종료 -->
 
-
-        <footer>
-            <div>
-                <p>주소 : 부산시 엄광로 282번길 28-18, 302호 <span>현피 안됨.</span></p>
-                <p>번호 : 010·9603·2291</p>
-                <p>후원 : 국민은행 876701-01-175499</p>
-            </div>
-        </footer>
+        <!--  푸터  -->
+        {{>/_components/footer}}
+        <!--  푸터 종료 -->
     </div>
 </body>
 

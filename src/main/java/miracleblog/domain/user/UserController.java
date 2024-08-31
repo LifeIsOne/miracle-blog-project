@@ -31,6 +31,7 @@ public class UserController {
     public String postLogin(UserRequest.LoginDTO reqDTO){
         log.info("로그인 요청 : " + reqDTO);
         User user = userService.login(reqDTO);
+
         log.info("User : " + user);
         return "redirect:/";
     }

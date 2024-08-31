@@ -9,42 +9,20 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
 
-        <!-- 헤더시작 -->
-        <header>
-            <div class="logo">
-                <h3>뱛벓미라클 블로그뱛벓</h3>
-            </div>
-            <nav>
-                <div id="menu_bar">
-                    <ul class="">
-                        <a href="">
-                            <li>로그인 기능 넣기</li>
-                        </a>
-                        <a href="">
-                            <li>Life Log</li>
-                        </a>
-                        <a href="">
-                            <li>Hand Book</li>
-                        </a>
-                        <a href="">
-                            <li>CookBook</li>
-                        </a>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- 헤더 종료 -->
+    <!-- 헤더시작 -->
+    {{>/_components/header}}
+    <!-- 헤더 종료 -->
 
-        <!-- 블로그 배경 -->
-        <div class="main_bg">
-            <img src="/images/02.jpg" alt="배경이미지">
-        </div>
+    <!-- 블로그 배경 -->
+    <div class="main_bg">
+        <img src="/images/02.jpg" alt="배경이미지">
+    </div>
 
-        <main>
-            <!-- 게시판 -->
-            <div class="section">
+    <main>
+        <!-- 게시판 -->
+        <div class="section">
             <div class="board-section">
                 <div class="col-md-3 my-3">
                     <div class="card card_item">
@@ -59,7 +37,7 @@
                                     content
                                 </p>
                                 <p class="card-text my_main_item_date my_mb_sm_1"
-                                    style="color: #888888; margin-top: 10px">
+                                   style="color: #888888; margin-top: 10px">
                                     createdAt
                                 </p>
                             </div>
@@ -72,55 +50,19 @@
                         </a>
                     </div>
                 </div>
-                </div>
             </div>
-            <!-- 게시판 종료 -->
-            <!-- 사이드 메뉴 -->
-            <div>
-                <div class="side_menu">
-                    <div class="profile">
-                        <img src="/images/profile.jpg" alt="">
-                        <p>양승호님! 안녕하세요!</p>
-                        <p>이 블로그는 다음의 기술로 만들어졌습니다!</p>
-                        <p>· (Html/Css) Mustache</p>
-                        <p>· Devtools</p>
-                        <p>· Spring</p>
-                        <p>· Lombok</p>
-                        <p>· JPA</p>
-                        <p>· H2</p>
-                        <p>· MySQL</p>
-                    </div>
-                    <ul>
-                        <a href="">
-                            <li>자유 게시판</li>
-                        </a>
-                        <a href="">
-                            <li>전국 날씨 ( 공공 API )</li>
-                        </a>
-                        <a href="">
-                            <li>Bank App</li>
-                        </a>
-                        <a href="">
-                            <li>Miracle Blog</li>
-                        </a>
-                        <a href="">
-                            <li>더보기</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <!-- 사이드 메뉴 종료 -->
-        </main>
-        <!-- 섹션 종료 -->
+        </div>
+        <!-- 게시판 종료 -->
+        <!-- 사이드 메뉴 -->
+        {{>/_components/side-menu}}
+        <!-- 사이드 메뉴 종료 -->
+    </main>
+    <!-- 섹션 종료 -->
 
-        <footer>
-            <div>
-                <p>주소 : 부산시 엄광로 282번길 28-18, 302호 <span>현피 안됨.</span></p>
-                <p>번호 : 010·9603·2291</p>
-                <p>후원 : 국민은행 876701-01-175499</p>
-            </div>
-        </footer>
-    </div>
+    <!--  푸터  -->
+    {{>/_components/footer}}
+    <!--  푸터 종료 -->
+</div>
 </body>
 
 </html>
