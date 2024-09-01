@@ -36,11 +36,19 @@ public class UserController {
         return "redirect:/";
     }
 
-    // TODO : 회원가입 페이지 만들기
+    // 회원가입 페이지
     @GetMapping("/signup")
     public String getSignupPage() {
         return "user/signup-page";
     }
+
+    @PostMapping("/signup")
+    public String postSignup(UserRequest.SignupDTO reqDTO){
+        userService.signup(reqDTO);
+
+        return "redirect:/";
+    }
+
 
     @GetMapping("/err")
     public String errPage() {
