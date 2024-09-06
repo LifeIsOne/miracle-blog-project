@@ -5,12 +5,20 @@
     <nav>
         <div id="menu_bar">
             <ul class="">
-                <a href="">
-                    <li>로그인 기능 넣기</li>
-                </a>
+                {{^sessionUser}}
+                    <a href="/login">
+                        <li>로그인</li>
+                    </a>
+                {{/sessionUser}}
+                {{#sessionUser}}
+                    <a href="/">
+                        <li>로그아웃</li>
+                    </a>
+                {{/sessionUser}}
                 <a href="">
                     <li>Life Log</li>
                 </a>
+
                 <a href="">
                     <li>Hand Book</li>
                 </a>
