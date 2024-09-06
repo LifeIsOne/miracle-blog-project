@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 @RequiredArgsConstructor
 public class UserController {
-    private final HttpSession httpSession;
+    private final HttpSession session;
     private final UserService userService;
 
 
@@ -29,10 +29,13 @@ public class UserController {
     // 로그인
     @PostMapping("/login")
     public String postLogin(UserRequest.LoginDTO reqDTO){
-        log.info("로그인 요청 : " + reqDTO);
         User user = userService.login(reqDTO);
 
-        log.info("User : " + user);
+        SessionUser sessionUser = new SessionUser(user);
+        log.info("💗sessionUser : " + sessionUser);
+
+        session.setAttribute("sessionUser", sessionUser);
+
         return "redirect:/";
     }
 

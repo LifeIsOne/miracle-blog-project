@@ -2,6 +2,7 @@ package miracleblog.domain.user;
 
 import jakarta.persistence.*;
 import lombok.Builder;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -11,6 +12,7 @@ import java.sql.Timestamp;
 @Entity
 @Table(name = "user_tb")
 @RequiredArgsConstructor
+@Data
 public class User {
 
     @Id
